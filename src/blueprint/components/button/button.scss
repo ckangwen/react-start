@@ -1,0 +1,54 @@
+@import "../../common/variables";
+@import "./common.scss";
+
+/*
+#{$ns}-active
+#{$ns}-disabled
+#{$ns}-loading
+.#{$ns}-intent-primary
+.#{$ns}-intent-success
+.#{$ns}-intent-warning
+.#{$ns}-intent-danger
+.#{$ns}-align-left
+.#{$ns}-align-right
+*/
+
+.#{$ns}-button {
+  @include button-base();
+  @include button-height($button-height);
+
+  &:empty {
+    padding: 0 !important;
+  }
+
+  &:disable,
+  &.#{$ns} {
+    cursor: not-allowed;
+  }
+
+  &.#{$ns}-align-right,
+  .#{$ns}-align-right & {
+    text-align: right;
+  }
+
+  &.#{$ns}-align-left,
+  .#{$ns}-align-left & {
+    text-align: left;
+  }
+
+  &:not([class*="#{$ns}-intent-"]) {
+    @include default-button();
+  }
+
+  // intents
+  @each $intent,
+  $colors in $button-intents {
+    &.#{$ns}-intent-#{$intent} {
+      @include button-intent($colors...);
+    }
+  }
+
+  &[class*="#{$ns}-intent-"] .#{$ns}-button-spinner .#{$ns}-spinner-head {
+    stroke: $white;
+  }
+}

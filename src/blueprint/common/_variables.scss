@@ -1,0 +1,23 @@
+$ns: 'c' !default;
+
+
+
+$grid-size: 10px !default;
+
+$font-size: $grid-size * 1.4 !default;
+
+
+/* Icon variables */
+$icon-size-standard: 16px !default;
+$icon-size-large: 20px !default;
+
+
+/* Grids & dimensions */
+$border-radius: floor($grid-size / 3) !default;
+
+
+/* Buttons */
+$button-height: $grid-size * 3 !default;
+$button-height-small: $grid-size * 2.4 !default;
+$button-height-smaller: $grid-size * 2 !default;
+$button-height-large: $grid-size * 4 !default;

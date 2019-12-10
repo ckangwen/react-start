@@ -1,0 +1,15 @@
+/* Icon variables */
+/* Grids & dimensions */
+/* Buttons */
+/*
+ * this element becomes a flex container in the given direction
+ * supply `$margin` to put space between each child
+ * supply `$inline: inline` to use `display: flex-inline`.
+ * customize `flex: 1 1` child selector with $fill.
+*/
+/*
+ * applies margin along axis of direction between every direct child
+ * with no margins on either end
+ * $dir: row | column
+ * $margin: margin[-right | -bottom] value
+*/
