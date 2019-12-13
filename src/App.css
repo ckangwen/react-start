@@ -13,3 +13,21 @@ html {
 .demos>* {
   margin-top: 30px;
 }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.inline {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.item {
+  list-style: none;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 5px 7px;
+}
