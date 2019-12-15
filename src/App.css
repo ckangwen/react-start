@@ -10,7 +10,7 @@ html {
   justify-content: center;
 }
 
-.demos>* {
+.demos>div {
   margin-top: 30px;
 }
 
