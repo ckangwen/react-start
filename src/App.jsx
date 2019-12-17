@@ -1,7 +1,8 @@
 import React from 'react'
 // import ReactRefDemos from './base/ref'
 // import ReactErrorBoundaryDemos from './base/error-boundary'
-import ReactContextDemos from './base/context'
+// import ReactContextDemos from './base/context'
+import RenderPropsDemo from './base/render-props'
 import './App.css'
 export default class App extends React.Component {
   render() {
@@ -9,7 +10,8 @@ export default class App extends React.Component {
       <div className="demos">
         {/* <ReactRefDemos /> */}
         {/* <ReactErrorBoundaryDemos /> */}
-        <ReactContextDemos />
+        {/* <ReactContextDemos /> */}
+        <RenderPropsDemo />
       </div>
     )
   }

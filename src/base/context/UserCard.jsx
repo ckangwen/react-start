@@ -1,4 +1,5 @@
 import React from 'react'
+import './user.css'
 
 const UserContext = React.createContext({
   username: 'aaa-bbb',
@@ -22,7 +23,9 @@ export class UserCard extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      username: ''
+      username: 'AAA-BBB',
+      firstName: 'AAA',
+      lastName: 'BBB'
     }
   }
   render() {
@@ -35,7 +38,7 @@ export class UserCard extends React.Component {
 }
 
 const User = () => (
-  <div>
+  <div className="user-wrapper">
     <UserProfile />
   </div>
 )
@@ -46,8 +49,8 @@ const UserProfile = () => (
       context => {
         return (
           <div>
-            <div className="subtitle">Profile Page for </div>
-            <h1 className="title">{context.username}</h1>
+            <div>Profile Page for </div>
+            <h3>{context.username}</h3>
 
             <UserDetail />
           </div>
@@ -61,7 +64,13 @@ const UserDetail = () => (
   <UserConsumer>
     {
       context => {
-        <p><b>Username: </b>{context.username}</p>
+        return (
+          <div>
+            <p><b>Username:</b> {context.username}</p>
+            <p><b>First Name:</b> {context.firstName}</p>
+            <p><b>Last Name:</b> {context.lastName}</p>
+          </div>
+        )
       }
     }
   </UserConsumer>
