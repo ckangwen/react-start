@@ -1,0 +1,28 @@
+.box {
+  font-size: 14px;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: move;
+  user-select: none;
+}
+
+.inner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.box-wrapper {
+  border: 2px dashed #272727;
+  width: 500px;
+  height: 270px;
+}

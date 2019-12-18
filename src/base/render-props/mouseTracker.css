@@ -1,0 +1,16 @@
+.playground {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.178);
+}
+
+.img {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  position: absolute;
+}
